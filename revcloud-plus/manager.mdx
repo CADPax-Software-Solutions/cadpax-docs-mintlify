@@ -1,0 +1,45 @@
+---
+title: "Review and edit clouds with the manager"
+sidebarTitle: "Manager"
+description: "Navigate revision clouds by sheet, inspect their metadata, update selected clouds, and understand manager actions that change or delete objects."
+keywords: ["RevCloud Plus Manager", "revision cloud manager", "batch editing", "legacy conversion"]
+---
+
+**RevCloud Plus Manager** is the companion manager command implemented in the CADPax source. It is designed to help you find, inspect and update revision clouds across a Vectorworks drawing. Availability depends on whether the companion command is included in your distribution package.
+
+## Open the manager
+
+Use **Manager v2** on a selected RevCloud Plus object, or run **RevCloud Plus Manager** from the menu location you assigned through the Workspace Editor.
+
+## Browse and update clouds
+
+<Steps>
+  <Step title="Choose a sheet">
+    The **Sheets** list shows sheets and cloud counts. Select a sheet to filter the **Revision Clouds** list. The manager also supports an all-sheets view.
+  </Step>
+  <Step title="Select a cloud">
+    Choose a row in **Revision Clouds**. Review its details under **Selected Cloud Data**, including revision, approval, cloud, label, graphics and edit history.
+  </Step>
+  <Step title="Navigate when needed">
+    Use **Jump to Sheet** or **Jump to Cloud** to locate the relevant drawing and annotation. Use **Refresh** after changes elsewhere in the file.
+  </Step>
+  <Step title="Apply edits">
+    Edit supported values in **Selected Cloud Data** and choose **Apply to Selected**. The command writes settings to the selected cloud objects and regenerates them.
+  </Step>
+</Steps>
+
+## Other manager actions
+
+| Action | Effect |
+| --- | --- |
+| **Delete Selected** | Deletes the selected revision cloud objects after a confirmation prompt. |
+| **Convert** | Attempts to convert selected supported legacy cloud objects into RevCloud Plus objects. |
+| **Refresh** | Reloads the sheet and cloud lists. |
+
+<Warning>
+**Convert** is a potentially destructive migration operation. The current source deletes the original legacy object after successful conversion, and warns that flipped objects may require manual adjustment. Do not run it on the only copy of a project. Verify its behavior on duplicates before adopting it as a production workflow.
+</Warning>
+
+<Note>
+The current source contains the manager's operations. Its inclusion, license handling and compatibility in the final customer package still need release validation.
+</Note>

@@ -1,0 +1,44 @@
+---
+title: "Troubleshoot revision clouds and title blocks"
+sidebarTitle: "Troubleshooting"
+description: "Diagnose missing RevCloud Plus tools, invisible clouds or labels, title block detection problems, incomplete copy actions, and license warnings."
+keywords: ["RevCloud Plus troubleshooting", "Vectorworks revision cloud not visible", "title block revision"]
+---
+
+Use these checks to diagnose common RevCloud Plus symptoms. Begin in a duplicate test file when revision data or title block records are involved.
+
+## The tool or manager is missing
+
+- Confirm the CADPax package was installed using **Tools > Plug-ins > Plug-in Manager > Third-party Plug-ins**.
+- Restart Vectorworks after installation.
+- In **Tools > Workspaces > Edit Current Workspace**, look for the **RevCloud Plus** object and, if included, **RevCloud Plus Manager** command.
+- If only the object appears, check that your product package actually includes the companion manager.
+
+## The cloud outline is invisible
+
+- Select the object and check **Show CLOUD**.
+- Check **CLOUD Active** and the **Non-Active Class** if the object is inactive.
+- Check **Cloud Class**, **Approved Class**, and the visibility and attributes of the affected Vectorworks classes.
+- Confirm the drawn object's path surrounds the intended area.
+
+## The revision label is missing or incomplete
+
+- Check **Show LABEL** and enter a **Number/Letter** in revision data.
+- Verify the **Label Class**, **Approved Class**, and label display settings.
+- A revision-date, note or custom suffix may be selectable but is not currently rendered by the object's label routine. Use the revision number/letter for the displayed label.
+
+## Title block revisions cannot be edited
+
+The settings dialog looks for a **Title Block Border on the active layer**. If none is found, it displays a no-title-block state and disables the corresponding controls. Change to the sheet layer containing the relevant Title Block Border and reopen the settings dialog.
+
+## Copy from another cloud or title block does nothing useful
+
+This action is still a placeholder. Use the working fields in **Revision Data** instead and review the target title block revision manually.
+
+## A license warning appears
+
+Record the displayed **License Info**, your Vectorworks year, and the installed CADPax release. Ask CADPax to verify the customer license file. Avoid editing or renaming license data to bypass validation.
+
+## What to send with a support request
+
+Include the Vectorworks year and operating system, RevCloud Plus package version if known, exact error text, the action that triggered it, and a screenshot of the relevant dialog or Object Info palette. Do not send confidential project drawings unless the recipient has approved a secure method.

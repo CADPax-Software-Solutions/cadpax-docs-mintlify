@@ -1,0 +1,50 @@
+---
+title: "Install RevCloud Plus in Vectorworks"
+sidebarTitle: "Installation"
+description: "Install RevCloud Plus and its companion manager in Vectorworks, add the tools to your workspace, and check licensing and compatibility."
+keywords: ["RevCloud Plus installation", "Vectorworks plug-in manager", "CADPax license", "Vectorworks 2025"]
+---
+
+RevCloud Plus is a third-party Vectorworks plug-in. Before using it on a project, install the CADPax-provided package, make the object available in your workspace, and check that its license is valid.
+
+<Warning>
+Compatibility confirmed in the source metadata is Vectorworks 2025. Vectorworks 2026 recognises a credentialled plug-in build, but full 2026 runtime and installer testing still requires release sign-off. Check the compatibility statement supplied with your actual download.
+</Warning>
+
+## Before you begin
+
+- A compatible Vectorworks installation.
+- The complete RevCloud Plus distribution package supplied by CADPax.
+- A valid CADPax license file if required by your release.
+
+The object is named **RevCloud Plus**. The companion menu command is named **RevCloud Plus Manager**. Your package may contain both; do not assume the manager is included in every build.
+
+## Install
+
+<Steps>
+  <Step title="Open the Plug-in Manager">
+    In Vectorworks, choose **Tools > Plug-ins > Plug-in Manager**, then open **Third-party Plug-ins**.
+  </Step>
+  <Step title="Install the supplied plug-in files">
+    Choose **Install** and select the distribution files supplied by CADPax. Preserve the supplied file structure, including any supporting resources. Do not install loose development source files from GitHub.
+  </Step>
+  <Step title="Restart Vectorworks">
+    Close and reopen Vectorworks so it loads the newly installed plug-in.
+  </Step>
+  <Step title="Add the object and manager to your workspace">
+    Choose **Tools > Workspaces > Edit Current Workspace**. Locate **RevCloud Plus** in the available tools and add it to a tool set. If supplied, find **RevCloud Plus Manager** under available menu commands and add it to a menu.
+  </Step>
+  <Step title="Check the installation">
+    Open a test drawing, select the RevCloud Plus tool, and confirm you can place an object and see its Object Info palette controls. Check **License Info** for license status.
+  </Step>
+</Steps>
+
+See the [first-cloud guide](/revcloud-plus/first-cloud) for the first drawing exercise.
+
+## Licensing
+
+The current object plug-in implements file-based license checking. The exact customer delivery, file placement and renewal process must be confirmed in the commercial release instructions. Do not rename, modify or share a license file.
+
+For licensing and package problems, use [CADPax](https://cadpax.com/) to contact the product provider.
+
+For more on third-party plug-in installation, see [Vectorworks Plug-in Manager help](https://app-help.vectorworks.net/2026/eng/VW2026_Guide/Scripts/Creating_scripted%20plug-ins.htm).

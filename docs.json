@@ -1,13 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "CADPax Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#B62424",
+    "light": "#B62424",
+    "dark": "#FF8585"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
       {
@@ -16,38 +15,34 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "RevCloud Plus",
+        "pages": [
+          "revcloud-plus/overview",
+          "revcloud-plus/installation",
+          "revcloud-plus/first-cloud",
+          "revcloud-plus/settings",
+          "revcloud-plus/title-block",
+          "revcloud-plus/manager",
+          "revcloud-plus/licensing",
+          "revcloud-plus/troubleshooting",
+          "revcloud-plus/release-notes"
+        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "https://cadpax.com/",
+        "label": "CADPax"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "CADPax website",
+      "href": "https://cadpax.com/"
     }
   },
   "contextual": {
@@ -64,9 +59,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
+  },
+  "description": "Guides and support for CADPax Vectorworks plugins."
 }

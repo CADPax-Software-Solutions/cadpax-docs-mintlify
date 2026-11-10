@@ -1,0 +1,41 @@
+---
+title: "Configure clouds, labels and approval"
+sidebarTitle: "Settings"
+description: "Understand RevCloud Plus settings for revision data, approvals, cloud sizes, label bubbles, classes, and object edit history."
+keywords: ["RevCloud Plus settings", "Object Info palette", "revision cloud classes", "bubble label"]
+---
+
+RevCloud Plus exposes quick parameters in the Object Info palette and a larger **Settings v2** dialog. Double-clicking the object also opens its settings workflow.
+
+## Settings reference
+
+| Section | Controls | Purpose |
+| --- | --- | --- |
+| **Revision Data** | Number, Date, By, Description | Identify the drawing revision and record the reason for the change. |
+| **Approval** | Approved, Approval By, Approval Date, Approval Note | Record an approval decision and supporting details. |
+| **Cloud** | CLOUD Active, Show Cloud, Cloud Size, Cloud Variation | Control the cloud outline and its active state. |
+| **Label** | Show Label, Display, Suffix, Font Size, BUBBLE Type, BUBBLE Scale | Set revision label visibility and appearance. |
+| **Graphics** | Non-Active Class, Cloud Class, Label Class, Approved Class | Route the generated graphics to classes. |
+| **Edit History** | Created Date/By, Last Edit Date/By | View stored creation and edit metadata. |
+
+## Cloud styles
+
+**Cloud Size** offers **Extra Small**, **Small**, **Medium**, and **Large**. **Cloud Variation** offers **None**, **Small**, **Medium**, and **Large**. Changes regenerate the cloud outline from the stored path.
+
+## Label styles
+
+The visible text is drawn from the revision **Number/Letter** field. Bubble shapes include **None**, **Triangle**, **Circle**, and **Hexagon**. Label display modes control text and bubble fill, or use the plug-in's attributes.
+
+<Warning>
+Although **Suffix** controls appear in the interface, the current drawing code does not render suffix text. Do not depend on suffix settings to communicate drawing issue information.
+</Warning>
+
+## Graphics classes
+
+An active cloud uses the cloud/label class settings. If **Approved** is enabled and an **Approved Class** is provided, that class is used for the generated approved graphics. If **CLOUD Active** is turned off, the **Non-Active Class** takes precedence. Review class visibility and attributes before issuing drawings.
+
+## Edit history
+
+Creation data is recorded if missing. Revision, approval and active-state edits, along with some object transformations, update last-edit information. Pure appearance adjustments may not update these fields.
+
+For title block functions in the same dialog, see [Title block revisions](/revcloud-plus/title-block).

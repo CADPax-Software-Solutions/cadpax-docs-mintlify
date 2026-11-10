@@ -1,0 +1,46 @@
+---
+title: "Coordinate revisions with a title block"
+sidebarTitle: "Title blocks"
+description: "Use RevCloud Plus to review title block revision rows, add or replace revision records, append notes, and safely commit changes."
+keywords: ["Vectorworks Title Block Border", "revision records", "RevCloud Plus", "title block"]
+---
+
+RevCloud Plus can coordinate cloud revision metadata with a Vectorworks **Title Block Border** on the active layer. The settings dialog displays existing revision records beside the cloud's revision details.
+
+## Before editing
+
+Use a test copy of a document for your first title block exchange. Confirm that a Title Block Border exists on the **active layer**, and that the current revision number, date and description are correct.
+
+<Steps>
+  <Step title="Open settings">
+    Select a RevCloud Plus object and click **Settings v2**, or double-click the object.
+  </Step>
+  <Step title="Check the Title Block Revisions list">
+    The right-hand list displays **REV #**, **BY**, **DATE**, **DESCRIPTION**, and associated **ISSUES**, where available. If no title block is found on the active layer, title-block operations are disabled.
+  </Step>
+  <Step title="Prepare the cloud's revision data">
+    In **Revision Data**, enter **Number**, **Date**, **By**, and **Description**. Buttons can populate the next revision number, today's date in **dd/mm/yy** format, or current-user initials.
+  </Step>
+  <Step title="Choose the exchange action">
+    **Add New** creates a staged revision row from the cloud fields. **Replace** updates the selected title block revision. **Append Note** appends the cloud's description to the selected revision note. Choose the target row carefully.
+  </Step>
+  <Step title="Review and confirm">
+    Review the revised list, including any automatic revision-number changes or warnings. Choose **OK** to commit staged title block and cloud changes, or **Cancel** to discard staged title-block edits.
+  </Step>
+</Steps>
+
+## Edit or remove a revision row
+
+The dialog also provides **Click to edit Rev Items** for editing selected cells and **Delete Titleblock Revision** for removing selected staged revision records. Verify the selected row before confirming changes.
+
+<Warning>
+Deleting or replacing title block revisions can affect sheet issue information. Save a backup first and check the final Title Block Border output after clicking **OK**.
+</Warning>
+
+## Currently incomplete
+
+The **Copy from other title block** and **Copy from other revision cloud** choices are placeholders in the current implementation. They do not copy revision data reliably and should not be used in production.
+
+<Note>
+The dialog stages title block record edits until **OK**. This behavior is implemented in the current source, but should still be checked against the final packaged release in a real Vectorworks drawing.
+</Note>

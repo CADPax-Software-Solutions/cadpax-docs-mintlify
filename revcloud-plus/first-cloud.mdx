@@ -1,0 +1,46 @@
+---
+title: "Create your first revision cloud"
+sidebarTitle: "First cloud"
+description: "Place a RevCloud Plus object, enter its revision metadata, and display a revision label and cloud outline in a Vectorworks drawing."
+keywords: ["revision cloud", "Vectorworks", "RevCloud Plus", "revision label"]
+---
+
+Use RevCloud Plus to mark a drawing change with a cloud boundary and a revision label. Each object stores revision details that can also be used in the title block revision workflow.
+
+<Steps>
+  <Step title="Place the cloud">
+    Activate **RevCloud Plus** in your workspace. Draw a boundary around the changed area using the path-object placement workflow in Vectorworks. The plug-in uses the object's closed path to generate its scalloped cloud outline.
+  </Step>
+  <Step title="Enter revision details">
+    Select the object and use the Object Info palette, or click **Settings v2** to open the full dialog. In **Revision Data**, enter the **Number** (or letter), **Date**, **By**, and **Description**.
+  </Step>
+  <Step title="Show the cloud and label">
+    Set **Show Cloud** and **Show Label** as needed. RevCloud Plus draws the cloud from the boundary and draws the revision number or letter as its primary label.
+  </Step>
+  <Step title="Choose a label bubble">
+    In **Label**, choose **None**, **Triangle**, **Circle**, or **Hexagon** as the bubble type. Adjust **BUBBLE Scale** and **Font Size** to suit your drawing presentation.
+  </Step>
+  <Step title="Review the result">
+    Confirm that the cloud encloses the intended changes, the revision identifier is correct, and the annotation is legible at the sheet's intended scale.
+  </Step>
+</Steps>
+
+## Useful controls
+
+| Control | What it changes |
+| --- | --- |
+| **CLOUD Active** | Marks the annotation as active or inactive for class-based presentation. |
+| **Show CLOUD** | Turns the cloud outline on or off. |
+| **Show LABEL** | Turns the revision text and bubble on or off. |
+| **Cloud Size** | Controls the size of scallops. |
+| **Cloud Variation** | Controls variation between scallops. |
+
+<Tip>
+Start with a small test drawing before applying a new class or label setup across live project documentation.
+</Tip>
+
+<Note>
+The current drawing routine renders the revision number/letter only. Suffix selections may appear in the interface, but revision-date, note and custom-suffix rendering is not yet complete.
+</Note>
+
+Next: [Settings reference](/revcloud-plus/settings) or [coordinate with a title block](/revcloud-plus/title-block).
